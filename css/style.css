@@ -1,6 +1,7 @@
 .container {
     width: min(100%, 1440px);
     margin: auto;
+    padding-top: 123.5px;
 }
 
 /* Header */
@@ -10,6 +11,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: inherit;
 }
 
 header ul {
