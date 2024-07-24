@@ -17,34 +17,70 @@
 
 <body>
     <!-- Header -->
-    <header>
-        <a href="">
-            <img src="images/logo plant.svg" alt="logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a class="active" href="index.html">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
-        </nav>
-        <div class="header_buttons">
+    <div class="container">
+        <header>
             <a href="">
-                <button class="login_button">LOG IN</button>
+                <img src="images/logo plant.svg" alt="logo">
             </a>
-            <a href="">
-                <button class="cart_button">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-            </a>
-        </div>
-    </header>
-    <!-- Section -->
-    <section class="main_section">
-        <section class="contact_section">
-
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header_buttons">
+                <a href="">
+                    <button class="login_button">LOG IN</button>
+                </a>
+                <a href="">
+                    <button class="cart_button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </a>
+            </div>
+        </header>
+        <!-- Section -->
+        <section class="main_section">
+            <section class="contact_section">
+                <h2>CONTACT US</h2>
+                <form name="contact_form" method="get">
+                    <section class="name_box">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="text" name="email" id="email" placeholder="Email">
+                    </section>
+                    <section class="radio_box">
+                        <h3>I have a delivery question about my order</h3>
+                        <div>
+                            <input type="radio" name="question" id="not_received">
+                            <label for="not_received">I did not receive my order</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="question" id="incorrect_order">
+                            <label for="incorrect_order">My order is incorrect or arrived damaged</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="question" id="cancel_order">
+                            <label for="cancel_order">Cancel my order</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="question" id="change_address">
+                            <label for="change_address">Change my shipping address</label>
+                        </div>
+                    </section>
+                    <section class="details_box">
+                        <h4>Please provide more details below.</h4>
+                        <textarea name="details" id="details" placeholder="Message"></textarea>
+                    </section>
+                    <section class="checkbox_box">
+                    <input type="checkbox" name="newsletter">
+                    <label for="newsletter">I want to receive the newsletter</label>
+                </section>
+                    <button type="submit">SEND</button>
+                </form>
+            </section>
         </section>
-    </section>
+    </div>
 </body>
 
 </html>

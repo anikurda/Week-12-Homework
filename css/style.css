@@ -1,3 +1,7 @@
+.container {
+    width: min(100%, 1440px);
+    margin: auto;
+}
 
 /* Header */
 header {
@@ -56,5 +60,139 @@ header a {
 .header_buttons button:hover {
     border: none;
     background-color: #F30AEA;
+    cursor: pointer;
+}
+
+/* Section */
+.main_section {
+    background-image: url(../images/background.png);
+    background-position: center;
+    object-fit: cover;
+    padding-block: 64px;
+    display: flex;
+}
+
+.contact_section {
+    margin: auto;
+    padding: 48px calc(200 / 1440 * 100%);
+    background-color: #1C1325CC;
+    border-radius: 20px;
+    border: 1px solid #B052B5C9;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    align-items: center;
+}
+
+.contact_section h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 4px;
+    color: #FFFFFF;
+    text-shadow: 2px 4px 4px #F90CEFB5;
+
+}
+
+form {
+    /* background-color: #dd8e8e; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.name_box {
+    display: flex;
+    column-gap: 24px;
+}
+
+input[type=text] {
+    width: 248px;
+    height: 48px;
+    padding: 11px 22px;
+    border-radius: 8px;
+    border: 1px solid #B052B5;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    background-color: transparent;
+    color: #FFFFFF
+}
+
+
+.contact_section h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+/* radio styles here */
+
+.radio_box label {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #B052B5;
+}
+
+.contact_section h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+textarea {
+    width: 520px;
+    height: 112px;
+    padding: 11px 22px;
+    border-radius: 8px;
+    border: 1px solid #B052B5;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #9E8D9E;
+    background-color: transparent;
+}
+
+.checkbox_box {
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 16px;
+}
+
+/* checkbox styles here */
+
+.checkbox_box label {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.contact_section button {
+    width: 520px;
+    height: 64px;
+    top: 504px;
+    padding: 19px;
+    border-radius: 16px;
+    background-color: #F30AEA;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #FFFFFF;
+    border: none;
     cursor: pointer;
 }
