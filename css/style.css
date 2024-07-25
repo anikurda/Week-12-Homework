@@ -113,7 +113,8 @@ form {
     column-gap: 24px;
 }
 
-input[type=text] {
+input[type=text],
+input[type=email] {
     width: 100%;
     padding: 11px 22px;
     border-radius: 8px;
