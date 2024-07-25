@@ -71,11 +71,10 @@ header a {
 
 /* Section */
 .main_section {
-    background-image: url(../images/background.png);
-    background-position: center;
-    object-fit: cover;
-    padding-block: 64px;
     display: flex;
+    padding-block: 64px;
+    background: url(../images/background.png) center/cover;
+    background-repeat: no-repeat;
 }
 
 .contact_section {
@@ -108,14 +107,14 @@ form {
     row-gap: 24px;
 }
 
+/* Name and Email textbox */
 .name_box {
     display: flex;
     column-gap: 24px;
 }
 
 input[type=text] {
-    width: 248px;
-    height: 48px;
+    width: 100%;
     padding: 11px 22px;
     border-radius: 8px;
     border: 1px solid #B052B5;
@@ -127,7 +126,7 @@ input[type=text] {
     color: #FFFFFF
 }
 
-
+/* Radiobox */
 .contact_section h3 {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
@@ -137,7 +136,38 @@ input[type=text] {
     margin-bottom: 16px;
 }
 
-/* radio styles here */
+.radio_box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.radio_box div {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+
+input[type=radio] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #F30AEA;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=radio]:checked::before {
+    display: block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #F30AEA;
+    border-radius: 50%;
+}
 
 .radio_box label {
     font-family: "Poppins", sans-serif;
@@ -147,6 +177,7 @@ input[type=text] {
     color: #B052B5;
 }
 
+/* More details textarea */
 .contact_section h4 {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
@@ -157,7 +188,7 @@ input[type=text] {
 }
 
 textarea {
-    width: 520px;
+    width: 100%;
     height: 112px;
     padding: 11px 22px;
     border-radius: 8px;
@@ -170,6 +201,7 @@ textarea {
     background-color: transparent;
 }
 
+/* Newsletter checkbox */
 .checkbox_box {
     display: flex;
     column-gap: 16px;
@@ -177,6 +209,24 @@ textarea {
 }
 
 /* checkbox styles here */
+input[type=checkbox] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #F30AEA;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=checkbox]:checked::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #F30AEA;
+}
 
 .checkbox_box label {
     font-family: "Poppins", sans-serif;
@@ -187,8 +237,9 @@ textarea {
     color: #FFFFFF;
 }
 
+/* Button */
 .contact_section button {
-    width: 520px;
+    width: 100%;
     height: 64px;
     top: 504px;
     padding: 19px;
